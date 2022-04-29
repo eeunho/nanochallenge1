@@ -9,7 +9,24 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text("Happy Birthday")
+        NavigationView {
+            VStack {
+                Button(action: { }) {
+                    NavigationLink(destination: Text("next page")) {
+                        Text("시작하기").padding()
+                            .frame(width: 300)
+                    }
+                }
+                
+                Button(action: { }) {
+                    NavigationLink(destination: Text("next page 2")) {
+                        Text("시작하기2").padding()
+                            .frame(width: 300)
+                    }
+                }
+            }
+            .navigationTitle(Text("NP캔두잇"))
+        }
     }
 }
 

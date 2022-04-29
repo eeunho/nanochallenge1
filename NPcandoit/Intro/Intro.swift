@@ -8,7 +8,21 @@
 import SwiftUI
 
 struct Intro: View {
-        
+    var body: some View {
+        NavigationView{
+            TabView {
+                Text("First")
+                Text("Second")
+                Button(action: { }) {
+                    NavigationLink(destination: Text("next page")) {
+                        Text("시작하기").padding()
+                            .frame(width: 300)
+                    }
+                }
+            }
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
+        }
     }
 }
 

@@ -12,6 +12,7 @@
 		11B17888281ACD1400AD4C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B17887281ACD1400AD4C08 /* Assets.xcassets */; };
 		11B1788B281ACD1400AD4C08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B1788A281ACD1400AD4C08 /* Preview Assets.xcassets */; };
 		11B17896281B961200AD4C08 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17895281B961200AD4C08 /* Home.swift */; };
+		11B17899281BB29D00AD4C08 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17898281BB29D00AD4C08 /* Intro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		11B17887281ACD1400AD4C08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11B1788A281ACD1400AD4C08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11B17895281B961200AD4C08 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		11B17898281BB29D00AD4C08 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		11B17877281ACD1200AD4C08 = {
 			isa = PBXGroup;
 			children = (
+				11B17897281BB27900AD4C08 /* Intro */,
 				11B17894281B95F200AD4C08 /* Home */,
 				11B17882281ACD1200AD4C08 /* NPcandoit */,
 				11B17881281ACD1200AD4C08 /* Products */,
@@ -76,6 +79,14 @@
 				11B17895281B961200AD4C08 /* Home.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		11B17897281BB27900AD4C08 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				11B17898281BB29D00AD4C08 /* Intro.swift */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				11B17886281ACD1200AD4C08 /* ContentView.swift in Sources */,
 				11B17896281B961200AD4C08 /* Home.swift in Sources */,
+				11B17899281BB29D00AD4C08 /* Intro.swift in Sources */,
 				11B17884281ACD1200AD4C08 /* NPcandoitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

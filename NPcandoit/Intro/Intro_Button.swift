@@ -10,7 +10,7 @@ import SwiftUI
 struct Intro_Button: View {
     var body: some View {
         Button(action: { }) {
-            NavigationLink(destination: Text("home page")) {
+            NavigationLink(destination: Home()) {
                 Text("요정들을 만나러 가요").padding()
                     .frame(width: 300)
             }

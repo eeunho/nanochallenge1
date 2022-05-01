@@ -16,6 +16,7 @@ struct Intro: View {
                         Text("N이나 P여도 문제 없어요!")
                             .font(.title)
                             .fontWeight(.bold)
+                            .foregroundColor(Color(red: 195/255, green: 229/255, blue: 174/255))
                         
                         Spacer()
                     }
@@ -59,6 +60,7 @@ struct Intro: View {
             .tabViewStyle(.page)
             .indexViewStyle(.page(backgroundDisplayMode: .always))
         }
+        .navigationBarHidden(true)
     }
 }
 

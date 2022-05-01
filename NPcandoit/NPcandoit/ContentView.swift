@@ -26,7 +26,7 @@ struct ContentView: View {
                     Spacer()
                     
                     Button(action: { }) {
-                        NavigationLink(destination: Text("next page")) {
+                        NavigationLink(destination: Intro()) {
                             Text("시작하기").padding()
                                 .frame(width: 300)
                         }

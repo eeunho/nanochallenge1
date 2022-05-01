@@ -11,16 +11,25 @@ struct Home: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: Text("Nellie")) {
+                HStack {
+                    Text("NP캔두잇")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                }
+                .padding()
+                
+                NavigationLink(destination: Nellie()) {
                     Home_N_CardView()
                 }
                 
-                NavigationLink(destination: Text("Pat")) {
+                NavigationLink(destination: Pat()) {
                     Home_P_CardView()
                 }
-                .navigationTitle(Text("NP캔두잇"))
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

@@ -11,21 +11,15 @@ struct Home: View {
     var body: some View {
         NavigationView {
             VStack {
-                Button(action: { }) {
-                    NavigationLink(destination: Text("next page")) {
-                        Text("시작하기").padding()
-                            .frame(width: 300)
-                    }
+                NavigationLink(destination: Text("Nellie")) {
+                    Home_N_CardView()
                 }
                 
-                Button(action: { }) {
-                    NavigationLink(destination: Text("next page 2")) {
-                        Text("시작하기2").padding()
-                            .frame(width: 300)
-                    }
+                NavigationLink(destination: Text("Pat")) {
+                    Home_P_CardView()
                 }
+                .navigationTitle(Text("NP캔두잇"))
             }
-            .navigationTitle(Text("NP캔두잇"))
         }
     }
 }

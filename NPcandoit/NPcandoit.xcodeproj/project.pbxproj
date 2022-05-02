@@ -35,6 +35,7 @@
 		112FF13D28200D9E0042C3C3 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF13C28200D9E0042C3C3 /* Setting.swift */; };
 		112FF13F28200F550042C3C3 /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF13E28200F550042C3C3 /* DoneButton.swift */; };
 		112FF141282010050042C3C3 /* GiveUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF140282010050042C3C3 /* GiveUpButton.swift */; };
+		112FF14928202E500042C3C3 /* MyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF14828202E500042C3C3 /* MyTimer.swift */; };
 		11B17884281ACD1200AD4C08 /* NPcandoitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17883281ACD1200AD4C08 /* NPcandoitApp.swift */; };
 		11B17886281ACD1200AD4C08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17885281ACD1200AD4C08 /* ContentView.swift */; };
 		11B17888281ACD1400AD4C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B17887281ACD1400AD4C08 /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		112FF13C28200D9E0042C3C3 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		112FF13E28200F550042C3C3 /* DoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButton.swift; sourceTree = "<group>"; };
 		112FF140282010050042C3C3 /* GiveUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveUpButton.swift; sourceTree = "<group>"; };
+		112FF14828202E500042C3C3 /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
 		11B17880281ACD1200AD4C08 /* NPcandoit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPcandoit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B17883281ACD1200AD4C08 /* NPcandoitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPcandoitApp.swift; sourceTree = "<group>"; };
 		11B17885281ACD1200AD4C08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				112FF10B281EBD490042C3C3 /* Pat.swift */,
+				112FF14828202E500042C3C3 /* MyTimer.swift */,
 			);
 			path = Pat;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				112FF136282006270042C3C3 /* Thoughts.swift in Sources */,
 				112FF10C281EBD490042C3C3 /* Pat.swift in Sources */,
 				112FF126281FC1D30042C3C3 /* SaveOrDelete.swift in Sources */,
+				112FF14928202E500042C3C3 /* MyTimer.swift in Sources */,
 				112FF0FA281EB79F0042C3C3 /* Home_N_CardView.swift in Sources */,
 				112FF100281EBA310042C3C3 /* Intro_CardView2.swift in Sources */,
 				112FF128281FC2420042C3C3 /* SaveButton.swift in Sources */,

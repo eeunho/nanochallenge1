@@ -9,7 +9,15 @@ import SwiftUI
 
 struct Thoughts: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            ScrollView(.vertical, showsIndicators: true) {
+                List {
+                    Text("1")
+                    Text("2")
+                }
+            }
+            .navigationTitle("묻어둔 생각들")
+        }
     }
 }
 

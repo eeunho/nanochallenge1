@@ -52,7 +52,7 @@ struct Home: View {
                 .padding(.top)
                 .padding(.leading)
                 
-                NavigationLink(destination: Work()) {
+                NavigationLink(destination: Thoughts()) {
                     Home_Thoughts_CardView()
                 }
                 

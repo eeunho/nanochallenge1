@@ -1,13 +1,13 @@
 //
-//  Home_P_CardView.swift
+//  Home_Thoughts_CardView.swift
 //  NPcandoit
 //
-//  Created by Seulki Lee on 2022/05/01.
+//  Created by Seulki Lee on 2022/05/02.
 //
 
 import SwiftUI
 
-struct Home_P_CardView: View {
+struct Home_Thoughts_CardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -15,15 +15,15 @@ struct Home_P_CardView: View {
             
             HStack {
                 VStack(alignment: .leading) {
-                    Text("P인 당신의 계획 실행을 도와줄")
+                    Text("묻어두었던")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.lightgreen)
                     
-                    Text("요정 팻을 만나보세요!")
+                    Text("기억상자를 열어보아요")
                         .font(.title2)
                         .fontWeight(.bold)
-                        .foregroundColor(.pyellow)
+                        .foregroundColor(.lightpink)
                 }
                 
                 Spacer()
@@ -31,5 +31,6 @@ struct Home_P_CardView: View {
             .padding()
         }
         .padding(.leading)
-        .padding(.trailing)    }
+        .padding(.trailing)
+    }
 }

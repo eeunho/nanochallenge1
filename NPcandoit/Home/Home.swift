@@ -12,13 +12,13 @@ struct Home: View {
         NavigationView {
             VStack {
                 HStack {
-                    Text("NP캔두잇")
+                    Text("요정들을 만나요")
                         .font(.title)
                         .fontWeight(.bold)
                     
                     Spacer()
                 }
-                .padding()
+                .padding(.leading)
                 
                 NavigationLink(destination: Nellie()) {
                     Home_N_CardView()
@@ -27,6 +27,41 @@ struct Home: View {
                 NavigationLink(destination: Pat()) {
                     Home_P_CardView()
                 }
+                
+                HStack {
+                    Text("바로 일을 시작해요")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                }
+                .padding(.top)
+                .padding(.leading)
+                
+                NavigationLink(destination: Work()) {
+                    Home_Work_CardView()
+                }
+                
+                HStack {
+                    Text("묻어둔 기억 상자")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                }
+                .padding(.top)
+                .padding(.leading)
+                
+                NavigationLink(destination: Work()) {
+                    Home_Thoughts_CardView()
+                }
+                
+                Spacer()
+            }
+            .toolbar {
+                NavigationLink(destination: Setting(), label: {
+                    Home_ToolbarImage()
+                })
             }
         }
         .navigationBarHidden(true)

@@ -34,14 +34,16 @@ struct Nellie: View {
                     Spacer()
                     
                     Nellie_CardView2()
-                        .padding(.bottom, 200)
+                        .padding(.bottom)
                     
-                    
+                    BoxingButton(buttonLabel: "좋아요")
+                        .padding(80)
                 }
             }
             .tabViewStyle(.page)
             .indexViewStyle(.page(backgroundDisplayMode: .always))
         }
+        .navigationBarHidden(true)
     }
 }
 

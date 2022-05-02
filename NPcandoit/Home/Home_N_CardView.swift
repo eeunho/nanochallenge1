@@ -15,21 +15,24 @@ struct Home_N_CardView: View {
             
             HStack {
                 VStack(alignment: .leading) {
-                    Text("N인 당신의 생각 정리를 도와줄")
-                        .font(.headline)
+                    Text("N인 당신의 생각정리를 도와줄")
+                        .font(.caption)
                         .fontWeight(.bold)
-                        .foregroundColor(.lightpink)
+                        .foregroundColor(.lightgreen)
                     
                     Text("요정 넬리를 만나보세요!")
-                        .font(.title)
+                        .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(.ngreen)
+                        .lineLimit(3)
                 }
                 
                 Spacer()
             }
+            .layoutPriority(100)
             .padding()
         }
-        .padding()
+        .padding(.leading)
+        .padding(.trailing)
     }
 }

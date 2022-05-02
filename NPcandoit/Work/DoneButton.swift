@@ -27,7 +27,7 @@ struct DoneButton: View {
             .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)            }
         }
         .alert(isPresented: $displayPopupMessage) {
-            Alert(title: Text("정말 멋져요!"), message: Text("정말 뿌듯하지 않나요? 하고 싶은 것 하면서 쉬세요."), dismissButton: .default(Text("좋아요"), action: {
+            Alert(title: Text("멋져요!"), message: Text("정말 뿌듯하지 않나요? 하고 싶은 것 하면서 쉬세요."), dismissButton: .default(Text("좋아요"), action: {
                 self.showDetail = true
             }))
         }

@@ -13,7 +13,7 @@ struct Work: View {
             VStack {
                 Spacer()
                 
-                Text("그럼 화이팅이에요!")
+                Text("그럼 일을 시작해볼까요? 화이팅이에요!")
                     .font(.title2)
                 
                 Spacer()
@@ -21,7 +21,7 @@ struct Work: View {
                 DoneButton(buttonLabel: "다 끝냈어요!")
                     .padding()
                 
-                SaveButton(buttonLabel: "포기할래요")
+                GiveUpButton(buttonLabel: "포기할래요")
                     .padding(.bottom)
             }
         }

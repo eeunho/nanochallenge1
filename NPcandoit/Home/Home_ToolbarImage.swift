@@ -9,10 +9,10 @@ import SwiftUI
 
 struct Home_ToolbarImage: View {
     var body: some View {
-        Image(systemName: "person.crop.circle")
+        Image(systemName: "square.and.pencil")
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 35.0)
+            .frame(width: 25.0)
             .foregroundColor(.lightgreen)
     }
 }

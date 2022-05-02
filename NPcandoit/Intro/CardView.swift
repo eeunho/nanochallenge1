@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct Intro_CardView: View {
+struct CardView: View {
     let texts: String
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .foregroundColor(Color(red: 245/255, green: 255/255, blue: 243/255))
+                .foregroundColor(.backgroundgreen)
             
             HStack {
                 Text(texts)

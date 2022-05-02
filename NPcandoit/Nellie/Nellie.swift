@@ -9,7 +9,39 @@ import SwiftUI
 
 struct Nellie: View {
     var body: some View {
-        Text("Hello, Nellie!")
+        NavigationView {
+            TabView {
+                VStack {
+                    Spacer()
+                    
+                    HStack {
+                        Text("넬리를 만나요")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.lightgreen)
+                        
+                        Spacer()
+                    }
+                    .padding()
+                    
+                    Nellie_CardView1()
+                        .padding(.bottom, 200)
+                    
+                    Spacer()
+                }
+                
+                VStack {
+                    Spacer()
+                    
+                    Nellie_CardView2()
+                        .padding(.bottom, 200)
+                    
+                    
+                }
+            }
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
+        }
     }
 }
 

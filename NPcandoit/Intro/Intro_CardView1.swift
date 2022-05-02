@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Intro_CardView1: View {
     var body: some View {
-        Intro_CardView(texts: """
+        CardView(texts: """
 N인 당신! 생각이 너무 많아 일에 집중하기 힘든가요?
 
 P인 당신! 일을 시작하는데 어려움을 겪고 있지는 않으신가요?

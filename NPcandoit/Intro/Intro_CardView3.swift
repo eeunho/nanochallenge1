@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Intro_CardView3: View {
     var body: some View {
-        Intro_CardView(texts: """
+        CardView(texts: """
 '조금만 더...' 라는 생각을 떨쳐버릴 수 없지는 않나요?
 
 P의 요정 팻은 당신이 미루지 않고 일을 즉시 시작할 수 있게 도와줄 거예요.

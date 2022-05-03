@@ -22,7 +22,6 @@ struct SaveOrDelete: View {
                 Spacer()
                 
                 DeleteButton(buttonLabel: "아예 잊어버릴래요")
-                    .padding()
                 
                 SaveButton(buttonLabel: "나중에 꺼내볼 수도 있을 것 같아요")
                     .padding(.bottom)
@@ -37,5 +36,3 @@ struct SaveOrDelete_Previews: PreviewProvider {
         SaveOrDelete()
     }
 }
-
-// 각 버튼 네비게이션 어떻게 해야할지 고민...

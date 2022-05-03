@@ -38,6 +38,11 @@
 		112FF14F2820E53D0042C3C3 /* Pat_CardView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF14E2820E53D0042C3C3 /* Pat_CardView1.swift */; };
 		112FF1512820E7590042C3C3 /* Pat_CardView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF1502820E7590042C3C3 /* Pat_CardView2.swift */; };
 		112FF1532820E9BB0042C3C3 /* CountdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF1522820E9BB0042C3C3 /* CountdownButton.swift */; };
+		112FF15728210C890042C3C3 /* GotoWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF15628210C890042C3C3 /* GotoWork.swift */; };
+		112FF15928210D4B0042C3C3 /* OkayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF15828210D4B0042C3C3 /* OkayButton.swift */; };
+		112FF15B28210D570042C3C3 /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF15A28210D570042C3C3 /* NoButton.swift */; };
+		112FF15D282119120042C3C3 /* SaveThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF15C282119120042C3C3 /* SaveThoughts.swift */; };
+		112FF15F282119D60042C3C3 /* SaveButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF15E282119D60042C3C3 /* SaveButton2.swift */; };
 		11B17884281ACD1200AD4C08 /* NPcandoitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17883281ACD1200AD4C08 /* NPcandoitApp.swift */; };
 		11B17886281ACD1200AD4C08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17885281ACD1200AD4C08 /* ContentView.swift */; };
 		11B17888281ACD1400AD4C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B17887281ACD1400AD4C08 /* Assets.xcassets */; };
@@ -78,6 +83,11 @@
 		112FF14E2820E53D0042C3C3 /* Pat_CardView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pat_CardView1.swift; sourceTree = "<group>"; };
 		112FF1502820E7590042C3C3 /* Pat_CardView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pat_CardView2.swift; sourceTree = "<group>"; };
 		112FF1522820E9BB0042C3C3 /* CountdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownButton.swift; sourceTree = "<group>"; };
+		112FF15628210C890042C3C3 /* GotoWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotoWork.swift; sourceTree = "<group>"; };
+		112FF15828210D4B0042C3C3 /* OkayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkayButton.swift; sourceTree = "<group>"; };
+		112FF15A28210D570042C3C3 /* NoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoButton.swift; sourceTree = "<group>"; };
+		112FF15C282119120042C3C3 /* SaveThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveThoughts.swift; sourceTree = "<group>"; };
+		112FF15E282119D60042C3C3 /* SaveButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton2.swift; sourceTree = "<group>"; };
 		11B17880281ACD1200AD4C08 /* NPcandoit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPcandoit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B17883281ACD1200AD4C08 /* NPcandoitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPcandoitApp.swift; sourceTree = "<group>"; };
 		11B17885281ACD1200AD4C08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +117,8 @@
 				112FF121281FBDA90042C3C3 /* Boxed.swift */,
 				112FF125281FC1D30042C3C3 /* SaveOrDelete.swift */,
 				112FF127281FC2420042C3C3 /* SaveButton.swift */,
+				112FF15C282119120042C3C3 /* SaveThoughts.swift */,
+				112FF15E282119D60042C3C3 /* SaveButton2.swift */,
 				112FF129281FC2490042C3C3 /* DeleteButton.swift */,
 				112FF113281F9F540042C3C3 /* Nellie_CardView1.swift */,
 				112FF117281FACA90042C3C3 /* Nellie_CardView2.swift */,
@@ -120,7 +132,10 @@
 				112FF10B281EBD490042C3C3 /* Pat.swift */,
 				112FF14E2820E53D0042C3C3 /* Pat_CardView1.swift */,
 				112FF1502820E7590042C3C3 /* Pat_CardView2.swift */,
+				112FF15628210C890042C3C3 /* GotoWork.swift */,
 				112FF1522820E9BB0042C3C3 /* CountdownButton.swift */,
+				112FF15828210D4B0042C3C3 /* OkayButton.swift */,
+				112FF15A28210D570042C3C3 /* NoButton.swift */,
 				112FF14C2820DE850042C3C3 /* Countdown.swift */,
 			);
 			path = Pat;
@@ -276,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112FF15B28210D570042C3C3 /* NoButton.swift in Sources */,
 				112FF116281FA60E0042C3C3 /* colors.swift in Sources */,
+				112FF15D282119120042C3C3 /* SaveThoughts.swift in Sources */,
 				112FF0F0281E96CB0042C3C3 /* CardView.swift in Sources */,
 				112FF102281EBAC40042C3C3 /* Intro_CardView3.swift in Sources */,
 				112FF0FE281EB9EA0042C3C3 /* Intro_CardView1.swift in Sources */,
@@ -285,10 +302,12 @@
 				112FF120281FBC1B0042C3C3 /* BoxingButton.swift in Sources */,
 				112FF136282006270042C3C3 /* Thoughts.swift in Sources */,
 				112FF1512820E7590042C3C3 /* Pat_CardView2.swift in Sources */,
+				112FF15728210C890042C3C3 /* GotoWork.swift in Sources */,
 				112FF10C281EBD490042C3C3 /* Pat.swift in Sources */,
 				112FF126281FC1D30042C3C3 /* SaveOrDelete.swift in Sources */,
 				112FF0FA281EB79F0042C3C3 /* Home_N_CardView.swift in Sources */,
 				112FF100281EBA310042C3C3 /* Intro_CardView2.swift in Sources */,
+				112FF15928210D4B0042C3C3 /* OkayButton.swift in Sources */,
 				112FF128281FC2420042C3C3 /* SaveButton.swift in Sources */,
 				112FF132282002D00042C3C3 /* Home_Work_CardView.swift in Sources */,
 				112FF14F2820E53D0042C3C3 /* Pat_CardView1.swift in Sources */,
@@ -305,6 +324,7 @@
 				112FF11E281FB39F0042C3C3 /* IntroButton.swift in Sources */,
 				112FF141282010050042C3C3 /* GiveUpButton.swift in Sources */,
 				11B17899281BB29D00AD4C08 /* Intro.swift in Sources */,
+				112FF15F282119D60042C3C3 /* SaveButton2.swift in Sources */,
 				112FF122281FBDA90042C3C3 /* Boxed.swift in Sources */,
 				112FF12A281FC2490042C3C3 /* DeleteButton.swift in Sources */,
 				112FF14D2820DE850042C3C3 /* Countdown.swift in Sources */,

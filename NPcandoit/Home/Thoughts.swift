@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct Thoughts: View {
+//    let savedThoughts = thoughts
+    let savedThoughts = ["고민", "걱정", "근심", "망상"]
     var body: some View {
         NavigationView{
-            ScrollView(.vertical, showsIndicators: true) {
-                List {
-                    Text("1")
-                    Text("2")
+            List {
+                ForEach(savedThoughts, id: \.self) {
+                    savedThought in
+                    NavigationLink(destination: Text("\(savedThought)")) {
+                        Text("\(savedThought)")
+                    }
                 }
             }
             .navigationTitle("묻어둔 생각들")
@@ -27,3 +31,6 @@ struct Thoughts_Previews: PreviewProvider {
         Thoughts()
     }
 }
+
+// 근데 이렇게 하면 앱 껐다 켜면 사라지는 건가??
+// 그리고 삭제기능도 만들어야 함

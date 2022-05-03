@@ -8,13 +8,42 @@
 import SwiftUI
 
 struct Pat: View {
-    
-    //@state를 지우고 @ObervedObject로 바꿔줌
-    @ObservedObject var myTimer = MyTimer()
-    
     var body: some View {
-        Text("\(self.myTimer.value)")
-            .font(.largeTitle)
+        NavigationView {
+            TabView {
+                VStack {
+                    Spacer()
+                    
+                    HStack {
+                        Text("팻을 만나요")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.pyellow)
+                        
+                        Spacer()
+                    }
+                    .padding()
+                    
+                    Pat_CardView1()
+                        .padding(.bottom, 200)
+                    
+                    Spacer()
+                }
+                
+                VStack {
+                    Spacer()
+                    
+                    Pat_CardView2()
+                        .padding(.bottom)
+                    
+                    BoxingButton(buttonLabel: "좋아요")
+                        .padding(80)
+                }
+            }
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
+        }
+        .navigationBarHidden(true)
     }
 }
 

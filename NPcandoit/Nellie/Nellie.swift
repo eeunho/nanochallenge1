@@ -18,7 +18,7 @@ struct Nellie: View {
                         Text("넬리를 만나요")
                             .font(.title)
                             .fontWeight(.bold)
-                            .foregroundColor(.lightgreen)
+                            .foregroundColor(.ngreen)
                         
                         Spacer()
                     }

@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct SaveThoughts: View {
+    @State var thought: String = ""
     var body: some View {
         NavigationView{
-        VStack {
-            Text("저장하는 곳")
-            SaveButton2(buttonLabel: "묻어두기")
+            VStack {
+                TextField("나중에 꺼내볼 수도 있는 생각을 묻어두세요", text: $thought)
+                    .textFieldStyle(.roundedBorder)
+                    .padding()
+                
+                Spacer()
+                
+                SaveButton2(buttonLabel: "묻어두기")
+            }
         }
-    }
         .navigationBarHidden(true)
     }
 }

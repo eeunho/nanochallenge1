@@ -27,9 +27,9 @@ struct GiveUpButton: View {
             .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)            }
         }
         .alert(isPresented: $displayPopupMessage) {
-            Alert(title: Text("정말인가요?"), message: Text("아쉬워요. 마음이 바뀌면 언제든 절 다시 찾아주세요."), dismissButton: .default(Text("알겠어요"), action: {
+            Alert(title: Text("정말인가요?"), message: Text("아쉬워요. 마음이 바뀌면 언제든 절 다시 찾아주세요."), primaryButton: .destructive(Text("네, 그래도 포기할게요"), action: {
                 self.showDetail = true
-            }))
+            }), secondaryButton: .cancel())
         }
     }
 }

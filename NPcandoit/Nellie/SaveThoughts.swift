@@ -19,6 +19,8 @@ struct SaveThoughts: View {
                 Spacer()
                 
                 SaveButton2(buttonLabel: "묻어두기")
+                
+                Spacer()
             }
         }
         .navigationBarHidden(true)

@@ -31,13 +31,13 @@
 		112FF132282002D00042C3C3 /* Home_Work_CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF131282002D00042C3C3 /* Home_Work_CardView.swift */; };
 		112FF134282006170042C3C3 /* Home_Thoughts_CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF133282006170042C3C3 /* Home_Thoughts_CardView.swift */; };
 		112FF136282006270042C3C3 /* Thoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF135282006270042C3C3 /* Thoughts.swift */; };
-		112FF13A28200BF80042C3C3 /* Home_ToolbarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF13928200BF80042C3C3 /* Home_ToolbarImage.swift */; };
 		112FF13D28200D9E0042C3C3 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF13C28200D9E0042C3C3 /* Setting.swift */; };
 		112FF13F28200F550042C3C3 /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF13E28200F550042C3C3 /* DoneButton.swift */; };
 		112FF141282010050042C3C3 /* GiveUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF140282010050042C3C3 /* GiveUpButton.swift */; };
 		112FF14D2820DE850042C3C3 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF14C2820DE850042C3C3 /* Countdown.swift */; };
 		112FF14F2820E53D0042C3C3 /* Pat_CardView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF14E2820E53D0042C3C3 /* Pat_CardView1.swift */; };
 		112FF1512820E7590042C3C3 /* Pat_CardView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF1502820E7590042C3C3 /* Pat_CardView2.swift */; };
+		112FF1532820E9BB0042C3C3 /* CountdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF1522820E9BB0042C3C3 /* CountdownButton.swift */; };
 		11B17884281ACD1200AD4C08 /* NPcandoitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17883281ACD1200AD4C08 /* NPcandoitApp.swift */; };
 		11B17886281ACD1200AD4C08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17885281ACD1200AD4C08 /* ContentView.swift */; };
 		11B17888281ACD1400AD4C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B17887281ACD1400AD4C08 /* Assets.xcassets */; };
@@ -71,13 +71,13 @@
 		112FF131282002D00042C3C3 /* Home_Work_CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_Work_CardView.swift; sourceTree = "<group>"; };
 		112FF133282006170042C3C3 /* Home_Thoughts_CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_Thoughts_CardView.swift; sourceTree = "<group>"; };
 		112FF135282006270042C3C3 /* Thoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thoughts.swift; sourceTree = "<group>"; };
-		112FF13928200BF80042C3C3 /* Home_ToolbarImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_ToolbarImage.swift; sourceTree = "<group>"; };
 		112FF13C28200D9E0042C3C3 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		112FF13E28200F550042C3C3 /* DoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButton.swift; sourceTree = "<group>"; };
 		112FF140282010050042C3C3 /* GiveUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveUpButton.swift; sourceTree = "<group>"; };
 		112FF14C2820DE850042C3C3 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 		112FF14E2820E53D0042C3C3 /* Pat_CardView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pat_CardView1.swift; sourceTree = "<group>"; };
 		112FF1502820E7590042C3C3 /* Pat_CardView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pat_CardView2.swift; sourceTree = "<group>"; };
+		112FF1522820E9BB0042C3C3 /* CountdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownButton.swift; sourceTree = "<group>"; };
 		11B17880281ACD1200AD4C08 /* NPcandoit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPcandoit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B17883281ACD1200AD4C08 /* NPcandoitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPcandoitApp.swift; sourceTree = "<group>"; };
 		11B17885281ACD1200AD4C08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +120,7 @@
 				112FF10B281EBD490042C3C3 /* Pat.swift */,
 				112FF14E2820E53D0042C3C3 /* Pat_CardView1.swift */,
 				112FF1502820E7590042C3C3 /* Pat_CardView2.swift */,
+				112FF1522820E9BB0042C3C3 /* CountdownButton.swift */,
 				112FF14C2820DE850042C3C3 /* Countdown.swift */,
 			);
 			path = Pat;
@@ -135,27 +136,9 @@
 			path = Work;
 			sourceTree = "<group>";
 		};
-		112FF12E281FECFF0042C3C3 /* Thoughts */ = {
-			isa = PBXGroup;
-			children = (
-				112FF135282006270042C3C3 /* Thoughts.swift */,
-			);
-			path = Thoughts;
-			sourceTree = "<group>";
-		};
-		112FF13B28200D910042C3C3 /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				112FF13C28200D9E0042C3C3 /* Setting.swift */,
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
 		11B17877281ACD1200AD4C08 = {
 			isa = PBXGroup;
 			children = (
-				112FF13B28200D910042C3C3 /* Setting */,
-				112FF12E281FECFF0042C3C3 /* Thoughts */,
 				112FF12D281FECFA0042C3C3 /* Work */,
 				112FF10A281EBD3C0042C3C3 /* Pat */,
 				112FF107281EBD220042C3C3 /* Nellie */,
@@ -199,11 +182,12 @@
 			isa = PBXGroup;
 			children = (
 				11B17895281B961200AD4C08 /* Home.swift */,
-				112FF13928200BF80042C3C3 /* Home_ToolbarImage.swift */,
 				112FF0F9281EB79F0042C3C3 /* Home_N_CardView.swift */,
 				112FF133282006170042C3C3 /* Home_Thoughts_CardView.swift */,
 				112FF131282002D00042C3C3 /* Home_Work_CardView.swift */,
 				112FF0FB281EB8440042C3C3 /* Home_P_CardView.swift */,
+				112FF135282006270042C3C3 /* Thoughts.swift */,
+				112FF13C28200D9E0042C3C3 /* Setting.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -309,7 +293,7 @@
 				112FF132282002D00042C3C3 /* Home_Work_CardView.swift in Sources */,
 				112FF14F2820E53D0042C3C3 /* Pat_CardView1.swift in Sources */,
 				112FF104281EBB2D0042C3C3 /* Intro_CardView4.swift in Sources */,
-				112FF13A28200BF80042C3C3 /* Home_ToolbarImage.swift in Sources */,
+				112FF1532820E9BB0042C3C3 /* CountdownButton.swift in Sources */,
 				112FF13F28200F550042C3C3 /* DoneButton.swift in Sources */,
 				11B17886281ACD1200AD4C08 /* ContentView.swift in Sources */,
 				112FF134282006170042C3C3 /* Home_Thoughts_CardView.swift in Sources */,

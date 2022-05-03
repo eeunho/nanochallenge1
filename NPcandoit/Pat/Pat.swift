@@ -36,7 +36,7 @@ struct Pat: View {
                     Pat_CardView2()
                         .padding(.bottom)
                     
-                    BoxingButton(buttonLabel: "좋아요")
+                    CountdownButton(buttonLabel: "알겠어요")
                         .padding(80)
                 }
             }

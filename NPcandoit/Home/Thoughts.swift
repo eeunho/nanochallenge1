@@ -18,6 +18,7 @@ struct Thoughts: View {
             }
             .navigationTitle("묻어둔 생각들")
         }
+        .navigationBarHidden(true)
     }
 }
 

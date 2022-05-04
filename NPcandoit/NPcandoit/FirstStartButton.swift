@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StartButton: View {
+struct FirstStartButton: View {
     let buttonLabel: String
     var body: some View {
         Button(action: { }) {

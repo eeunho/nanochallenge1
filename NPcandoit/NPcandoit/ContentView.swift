@@ -25,7 +25,7 @@ struct ContentView: View {
                     
                     Spacer()
                     
-                    StartButton(buttonLabel: "시작하기")
+                    FirstStartButton(buttonLabel: "시작하기")
                 }
             }
             

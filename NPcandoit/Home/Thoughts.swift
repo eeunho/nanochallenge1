@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct Thoughts: View {
-//    let savedThoughts = thoughts
-    let savedThoughts = ["고민", "걱정", "근심", "망상"]
+
     var body: some View {
         NavigationView{
             List {
-                ForEach(savedThoughts, id: \.self) {
+                ForEach(Unwrapper().unwrappedThoughts, id: \.self) {
                     savedThought in
                     NavigationLink(destination: Text("\(savedThought)")) {
                         Text("\(savedThought)")

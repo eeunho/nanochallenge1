@@ -11,6 +11,7 @@ struct SaveThoughts: View {
     @State var thought: String = ""
     @State var showDetail: Bool = false
     @State private var displayPopupMessage: Bool = false
+    
 
     var body: some View {
         NavigationView{
@@ -28,7 +29,9 @@ struct SaveThoughts: View {
             }
             .alert(isPresented: $displayPopupMessage) {
                 Alert(title: Text("생각을 묻어뒀어요"), message: Text("우선은 생각하지 않도록 노력해요"), dismissButton: .default(Text("그럴게요"), action: {
-                    self.showDetail = true
+                    self.showDetail = true;
+                    userDefaults.set(thoughts, forKey: "myThought")
+
                 }))
             }
         }

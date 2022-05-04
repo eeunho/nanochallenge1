@@ -44,6 +44,7 @@
 		112FF15D282119120042C3C3 /* SaveThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF15C282119120042C3C3 /* SaveThoughts.swift */; };
 		112FF1612821319A0042C3C3 /* SavedThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF1602821319A0042C3C3 /* SavedThoughts.swift */; };
 		112FF1632822B6000042C3C3 /* VisitedStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF1622822B6000042C3C3 /* VisitedStartButton.swift */; };
+		112FF1692822BCBB0042C3C3 /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FF1682822BCBB0042C3C3 /* FirstLaunch.swift */; };
 		11B17884281ACD1200AD4C08 /* NPcandoitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17883281ACD1200AD4C08 /* NPcandoitApp.swift */; };
 		11B17886281ACD1200AD4C08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17885281ACD1200AD4C08 /* ContentView.swift */; };
 		11B17888281ACD1400AD4C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B17887281ACD1400AD4C08 /* Assets.xcassets */; };
@@ -90,6 +91,7 @@
 		112FF15C282119120042C3C3 /* SaveThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveThoughts.swift; sourceTree = "<group>"; };
 		112FF1602821319A0042C3C3 /* SavedThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedThoughts.swift; sourceTree = "<group>"; };
 		112FF1622822B6000042C3C3 /* VisitedStartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedStartButton.swift; sourceTree = "<group>"; };
+		112FF1682822BCBB0042C3C3 /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
 		11B17880281ACD1200AD4C08 /* NPcandoit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPcandoit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B17883281ACD1200AD4C08 /* NPcandoitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPcandoitApp.swift; sourceTree = "<group>"; };
 		11B17885281ACD1200AD4C08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				11B17883281ACD1200AD4C08 /* NPcandoitApp.swift */,
 				112FF115281FA60E0042C3C3 /* colors.swift */,
 				11B17885281ACD1200AD4C08 /* ContentView.swift */,
+				112FF1682822BCBB0042C3C3 /* FirstLaunch.swift */,
 				112FF11B281FB2C40042C3C3 /* FirstStartButton.swift */,
 				112FF1622822B6000042C3C3 /* VisitedStartButton.swift */,
 				11B17887281ACD1400AD4C08 /* Assets.xcassets */,
@@ -309,6 +312,7 @@
 				112FF10C281EBD490042C3C3 /* Pat.swift in Sources */,
 				112FF126281FC1D30042C3C3 /* SaveOrDelete.swift in Sources */,
 				112FF0FA281EB79F0042C3C3 /* Home_N_CardView.swift in Sources */,
+				112FF1692822BCBB0042C3C3 /* FirstLaunch.swift in Sources */,
 				112FF100281EBA310042C3C3 /* Intro_CardView2.swift in Sources */,
 				112FF15928210D4B0042C3C3 /* OkayButton.swift in Sources */,
 				112FF128281FC2420042C3C3 /* SaveButton.swift in Sources */,

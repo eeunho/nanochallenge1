@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    func firstLaunch() -> Bool {
+        if let launchedBefore = UserDefaults.standard.string(forKey: "visited") {
+            return false
+        } else {
+            let launchedBefore = UserDefaults.standard.set("yes", forKey: "visited");
+            return true
+        }
+    }
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -25,7 +34,12 @@ struct ContentView: View {
                     
                     Spacer()
                     
-                    FirstStartButton(buttonLabel: "시작하기")
+                    if firstLaunch() == true {
+                        FirstStartButton(buttonLabel: "시작하기")
+                    } else {
+                        VisitedStartButton(buttonLabel: "시작")
+                    }
+                    
                 }
             }
             

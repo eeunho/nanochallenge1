@@ -37,7 +37,7 @@ struct ContentView: View {
                     if firstLaunch() == true {
                         FirstStartButton(buttonLabel: "시작하기")
                     } else {
-                        VisitedStartButton(buttonLabel: "시작")
+                        VisitedStartButton(buttonLabel: "시작하기")
                     }
                     
                 }

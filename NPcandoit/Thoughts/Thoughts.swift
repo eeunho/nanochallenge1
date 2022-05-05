@@ -17,14 +17,14 @@ struct Thoughts: View {
                         Text("\(savedThought)")
                     }
                 }
-                .onDelete(perform: delete)
+//                .onDelete(perform: delete)
 
                 ForEach(firstThought, id: \.self) {
                     savedThought in NavigationLink(destination: Text("\(savedThought)")) {
                         Text("\(savedThought)")
                     }
                 }
-                .onDelete(perform: delete)
+//                .onDelete(perform: delete)
             }
             .navigationTitle("묻어둔 생각들")
             .toolbar { EditButton() }
@@ -33,15 +33,21 @@ struct Thoughts: View {
         .navigationBarHidden(true)
     }
     
-    func delete(at offsets: IndexSet) {
-        thoughts.remove(atOffsets: offsets);
-        firstThought.remove(atOffsets: offsets)
-    }
-    
-    func removeFromMemory(element: String) {
-        thoughts = thoughts.filter{ $0 != element }
-        UserDefaults.standard.set(thoughts, forKey: "myThought")
-    }
+//    func delete(at offsets: IndexSet) {
+//        for i in offsets.makeIterator() {
+//            if firstThought.isEmpty {
+//                let theItem = thoughts[i]
+//                thoughts.remove(atOffsets: offsets)
+//                firstThought.remove(atOffsets: offsets)
+//                removeFromMemory(element: theItem)
+//            }
+//        }
+//    }
+//
+//    func removeFromMemory(element: String) {
+//        thoughts = thoughts.filter{ $0 != element }
+//        UserDefaults.standard.set(thoughts, forKey: "myThought")
+//    }
 }
 
 struct Thoughts_Previews: PreviewProvider {
@@ -49,3 +55,6 @@ struct Thoughts_Previews: PreviewProvider {
         Thoughts()
     }
 }
+
+
+// 

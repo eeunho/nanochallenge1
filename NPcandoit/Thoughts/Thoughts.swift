@@ -19,12 +19,6 @@ struct Thoughts: View {
                 }
 //                .onDelete(perform: delete)
 
-                ForEach(firstThought, id: \.self) {
-                    savedThought in NavigationLink(destination: Text("\(savedThought)")) {
-                        Text("\(savedThought)")
-                    }
-                }
-//                .onDelete(perform: delete)
             }
             .navigationTitle("묻어둔 생각들")
             .toolbar { EditButton() }
@@ -38,7 +32,6 @@ struct Thoughts: View {
 //            if firstThought.isEmpty {
 //                let theItem = thoughts[i]
 //                thoughts.remove(atOffsets: offsets)
-//                firstThought.remove(atOffsets: offsets)
 //                removeFromMemory(element: theItem)
 //            }
 //        }
@@ -57,4 +50,4 @@ struct Thoughts_Previews: PreviewProvider {
 }
 
 
-// 
+//

@@ -20,14 +20,8 @@ struct SaveThoughts: View {
                 TextField("나중에 다시 꺼내볼 생각을 키워드로 적어두세요.", text: $thought)
                     .textFieldStyle(.roundedBorder)
                     .onSubmit {
-                        if let savedBefore = UserDefaults.standard.string(forKey: "saved") {
-                            thoughts.append(thought)
-                            UserDefaults.standard.set(thoughts, forKey: "myThought")
-                        } else {
-                            let savedBefore = UserDefaults.standard.set("yes", forKey: "saved");
-                            firstThought.append(thought)
-                            UserDefaults.standard.set(firstThought, forKey: "myThought")
-                        }
+                        thoughts.append(thought)
+                        UserDefaults.standard.set(thoughts, forKey: "myThought")
                         self.displayPopupMessage = true
                     }
                     .padding()

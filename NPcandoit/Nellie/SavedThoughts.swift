@@ -7,8 +7,6 @@
 
 import Foundation
 
-var firstThought: [String] = []
-
 let savedThoughts = UserDefaults.standard.object(forKey: "myThought") as? [String]
 
 var thoughts: [String] = Unwrapper().unwrappedThoughts
@@ -21,6 +19,8 @@ class Unwrapper {
             for thought in unwrapped {
                 unwrappedThoughts.append(thought)
             }
+        } else {
+            unwrappedThoughts = []
         }
     }
 }

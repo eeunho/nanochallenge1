@@ -11,7 +11,6 @@ struct SaveThoughts: View {
     @State var thought: String = ""
     @State var showDetail: Bool = false
     @State private var displayPopupMessage: Bool = false
-//    @AppStorage("thoughts") var savedThoughts: [String]? = []
 
     var body: some View {
         NavigationView{
@@ -21,7 +20,14 @@ struct SaveThoughts: View {
                 TextField("나중에 꺼내볼 수도 있는 생각을 묻어두세요", text: $thought)
                     .textFieldStyle(.roundedBorder)
                     .onSubmit {
-                        thoughts.append(thought)
+                        if let savedBefore = UserDefaults.standard.string(forKey: "saved") {
+                            thoughts.append(thought)
+                            UserDefaults.standard.set(thoughts, forKey: "myThought")
+                        } else {
+                            let savedBefore = UserDefaults.standard.set("yes", forKey: "saved");
+                            firstThought.append(thought)
+                            UserDefaults.standard.set(firstThought, forKey: "myThought")
+                        }
                         self.displayPopupMessage = true
                     }
                     .padding()

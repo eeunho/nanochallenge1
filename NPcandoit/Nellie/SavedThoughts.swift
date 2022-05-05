@@ -7,23 +7,20 @@
 
 import Foundation
 
-var thoughts: [String] = []
+var firstThought: [String] = []
 
-//let userDefaults = UserDefaults.standard
-//let savedThoughts = userDefaults.object(forKey: "myThought") as? [String]
-////let thoughts = userDefaults.
-//
-//class Unwrapper {
-//    var unwrappedThoughts: [String] = []
-//
-//    init() {
-//
-//        if let unwrapped = savedThoughts {
-//            for thought in unwrapped {
-//                unwrappedThoughts.append(thought)
-//            }
-//        } else {
-//            unwrappedThoughts.append("비어 있음")
-//        }
-//    }
-//}
+let savedThoughts = UserDefaults.standard.object(forKey: "myThought") as? [String]
+
+var thoughts: [String] = Unwrapper().unwrappedThoughts
+
+class Unwrapper {
+    var unwrappedThoughts: [String] = []
+
+    init() {
+        if let unwrapped = savedThoughts {
+            for thought in unwrapped {
+                unwrappedThoughts.append(thought)
+            }
+        }
+    }
+}

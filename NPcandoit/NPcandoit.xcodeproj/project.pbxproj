@@ -51,6 +51,7 @@
 		11B17896281B961200AD4C08 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17895281B961200AD4C08 /* Home.swift */; };
 		11B17899281BB29D00AD4C08 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17898281BB29D00AD4C08 /* Intro.swift */; };
 		11EB2B0D2823F50100EA4CE5 /* ArrayCopier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EB2B0C2823F50100EA4CE5 /* ArrayCopier.swift */; };
+		11EB2B132824023800EA4CE5 /* Remover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EB2B122824023800EA4CE5 /* Remover.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		11B17895281B961200AD4C08 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		11B17898281BB29D00AD4C08 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		11EB2B0C2823F50100EA4CE5 /* ArrayCopier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCopier.swift; sourceTree = "<group>"; };
+		11EB2B122824023800EA4CE5 /* Remover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 			children = (
 				112FF135282006270042C3C3 /* Thoughts.swift */,
 				11EB2B0C2823F50100EA4CE5 /* ArrayCopier.swift */,
+				11EB2B122824023800EA4CE5 /* Remover.swift */,
 			);
 			path = Thoughts;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				11B17886281ACD1200AD4C08 /* ContentView.swift in Sources */,
 				112FF134282006170042C3C3 /* Home_Thoughts_CardView.swift in Sources */,
 				112FF118281FACA90042C3C3 /* Nellie_CardView2.swift in Sources */,
+				11EB2B132824023800EA4CE5 /* Remover.swift in Sources */,
 				11B17896281B961200AD4C08 /* Home.swift in Sources */,
 				112FF13D28200D9E0042C3C3 /* Setting.swift in Sources */,
 				112FF124281FBE3C0042C3C3 /* BurialButton.swift in Sources */,

@@ -19,7 +19,6 @@ struct Thoughts: View {
                     }
                 }
                 .onDelete(perform: delete)
-                .onDelete(perform: removeFromMemory)
             }
             .navigationTitle("묻어둔 생각들")
             .toolbar { EditButton() }
@@ -30,17 +29,8 @@ struct Thoughts: View {
     
     func delete(at offsets: IndexSet) {
         copiedThoughts.remove(atOffsets: offsets)
+        Remover().removeFromMemory(newArray: copiedThoughts)
     }
-    
-    func removeFromMemory(at offsets: IndexSet) {
-        for i in 0..<thoughts.count {
-            if copiedThoughts.contains(thoughts[i]) != true {
-                thoughts.remove(at: i)
-            }
-        }
-        UserDefaults.standard.set(thoughts, forKey: "myThought")
-    }
-}
 
 struct Thoughts_Previews: PreviewProvider {
     static var previews: some View {

@@ -25,6 +25,7 @@ struct SaveThoughts: View {
                         self.displayPopupMessage = true
                     }
                     .padding()
+                    .disableAutocorrection(true)
                 
                 Spacer()
             }

@@ -16,7 +16,7 @@ struct Thoughts: View {
                 ForEach(savedThoughts, id: \.self) {
                     savedThought in
                     NavigationLink(destination: Text("\(savedThought)")) {
-                        Text("\(savedThought)")
+                        Text("묻어둔 생각")
                     }
                 }
             }

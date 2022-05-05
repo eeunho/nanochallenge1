@@ -17,6 +17,7 @@ struct CardView: View {
             HStack {
                 Text(texts)
                     .padding()
+                    .foregroundColor(.buttongreen)
                 
                 Spacer()
             }

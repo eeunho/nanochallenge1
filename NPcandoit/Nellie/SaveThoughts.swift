@@ -44,3 +44,6 @@ struct SaveThoughts_Previews: PreviewProvider {
         SaveThoughts()
     }
 }
+
+
+// 이 페이지에서 버그 조금 있음. 저장된 생각들 먼저 삭제하고 돌아와서 앱 끄기 전에 이 페이지에서 다시 저장하고 돌아가면 이미 삭제했던 생각도 다시 돌아오게 됨

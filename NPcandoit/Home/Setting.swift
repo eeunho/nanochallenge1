@@ -26,3 +26,6 @@ struct Setting_Previews: PreviewProvider {
         Setting()
     }
 }
+
+
+// 설정은 나중에 추가하는 걸로...........

@@ -14,7 +14,7 @@ struct Thoughts: View {
             List {
                 ForEach(copiedThoughts, id: \.self) {
                     savedThought in
-                    NavigationLink(destination: Text("\(savedThought)")) {
+                    NavigationLink(destination: ViewThought(text: "\(savedThought)")) {
                         Text("\(savedThought)")
                     }
                 }
@@ -31,6 +31,7 @@ struct Thoughts: View {
         copiedThoughts.remove(atOffsets: offsets)
         Remover().removeFromMemory(newArray: copiedThoughts)
     }
+}
 
 struct Thoughts_Previews: PreviewProvider {
     static var previews: some View {

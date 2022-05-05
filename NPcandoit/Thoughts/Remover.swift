@@ -9,12 +9,20 @@ import Foundation
 
 struct Remover {
     func removeFromMemory(newArray: [String]) {
+        var deletedThought: String
+        var newThoughts: [String] = []
+
         for i in 0..<thoughts.count {
             if newArray.contains(thoughts[i]) != true {
-                thoughts.remove(at: i)
+                deletedThought = thoughts[i]
+                if newThoughts.isEmpty {
+                    newThoughts = thoughts.filter{ $0 != deletedThought }
+                } else {
+                    newThoughts = newThoughts.filter{ $0 != deletedThought }
+                }
             }
         }
-        let newThoughts: [String] = ArrayCopier().copyArray(originalArr: thoughts)
+        
         UserDefaults.standard.removeObject(forKey: "myThought")
         UserDefaults.standard.set(newThoughts, forKey: "myThought")
         var thoughts: [String] = Unwrapper().unwrappedThoughts

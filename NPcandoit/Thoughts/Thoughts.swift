@@ -17,16 +17,30 @@ struct Thoughts: View {
                         Text("\(savedThought)")
                     }
                 }
-                
+                .onDelete(perform: delete)
+
                 ForEach(firstThought, id: \.self) {
                     savedThought in NavigationLink(destination: Text("\(savedThought)")) {
                         Text("\(savedThought)")
                     }
                 }
+                .onDelete(perform: delete)
             }
             .navigationTitle("묻어둔 생각들")
+            .toolbar { EditButton() }
+
         }
         .navigationBarHidden(true)
+    }
+    
+    func delete(at offsets: IndexSet) {
+        thoughts.remove(atOffsets: offsets);
+        firstThought.remove(atOffsets: offsets)
+    }
+    
+    func removeFromMemory(element: String) {
+        thoughts = thoughts.filter{ $0 != element }
+        UserDefaults.standard.set(thoughts, forKey: "myThought")
     }
 }
 
@@ -35,6 +49,3 @@ struct Thoughts_Previews: PreviewProvider {
         Thoughts()
     }
 }
-
-// 근데 이렇게 하면 앱 껐다 켜면 사라지는 건가??
-// 그리고 삭제기능도 만들어야 함

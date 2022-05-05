@@ -17,7 +17,7 @@ struct SaveThoughts: View {
             VStack {
                 NavigationLink(destination: Work(), isActive: self.$showDetail) { EmptyView() }
                 
-                TextField("나중에 꺼내볼 수도 있는 생각을 묻어두세요", text: $thought)
+                TextField("나중에 다시 꺼내볼 생각을 키워드로 적어두세요.", text: $thought)
                     .textFieldStyle(.roundedBorder)
                     .onSubmit {
                         if let savedBefore = UserDefaults.standard.string(forKey: "saved") {

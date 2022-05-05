@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct Thoughts: View {
+    @State var copiedThoughts = ArrayCopier().copyArray(originalArr: thoughts)
     var body: some View {
         NavigationView{
             List {
-                ForEach(thoughts, id: \.self) {
+                ForEach(copiedThoughts, id: \.self) {
                     savedThought in
                     NavigationLink(destination: Text("\(savedThought)")) {
                         Text("\(savedThought)")
                     }
                 }
-//                .onDelete(perform: delete)
-
+                .onDelete(perform: delete)
+                .onDelete(perform: removeFromMemory)
             }
             .navigationTitle("묻어둔 생각들")
             .toolbar { EditButton() }
@@ -27,20 +28,18 @@ struct Thoughts: View {
         .navigationBarHidden(true)
     }
     
-//    func delete(at offsets: IndexSet) {
-//        for i in offsets.makeIterator() {
-//            if firstThought.isEmpty {
-//                let theItem = thoughts[i]
-//                thoughts.remove(atOffsets: offsets)
-//                removeFromMemory(element: theItem)
-//            }
-//        }
-//    }
-//
-//    func removeFromMemory(element: String) {
-//        thoughts = thoughts.filter{ $0 != element }
-//        UserDefaults.standard.set(thoughts, forKey: "myThought")
-//    }
+    func delete(at offsets: IndexSet) {
+        copiedThoughts.remove(atOffsets: offsets)
+    }
+    
+    func removeFromMemory(at offsets: IndexSet) {
+        for i in 0..<thoughts.count {
+            if copiedThoughts.contains(thoughts[i]) != true {
+                thoughts.remove(at: i)
+            }
+        }
+        UserDefaults.standard.set(thoughts, forKey: "myThought")
+    }
 }
 
 struct Thoughts_Previews: PreviewProvider {
@@ -48,6 +47,3 @@ struct Thoughts_Previews: PreviewProvider {
         Thoughts()
     }
 }
-
-
-//

@@ -50,6 +50,7 @@
 		11B1788B281ACD1400AD4C08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B1788A281ACD1400AD4C08 /* Preview Assets.xcassets */; };
 		11B17896281B961200AD4C08 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17895281B961200AD4C08 /* Home.swift */; };
 		11B17899281BB29D00AD4C08 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B17898281BB29D00AD4C08 /* Intro.swift */; };
+		11EB2B0D2823F50100EA4CE5 /* ArrayCopier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EB2B0C2823F50100EA4CE5 /* ArrayCopier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		11B1788A281ACD1400AD4C08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11B17895281B961200AD4C08 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		11B17898281BB29D00AD4C08 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
+		11EB2B0C2823F50100EA4CE5 /* ArrayCopier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCopier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				112FF135282006270042C3C3 /* Thoughts.swift */,
+				11EB2B0C2823F50100EA4CE5 /* ArrayCopier.swift */,
 			);
 			path = Thoughts;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				112FF132282002D00042C3C3 /* Home_Work_CardView.swift in Sources */,
 				112FF14F2820E53D0042C3C3 /* Pat_CardView1.swift in Sources */,
 				112FF104281EBB2D0042C3C3 /* Intro_CardView4.swift in Sources */,
+				11EB2B0D2823F50100EA4CE5 /* ArrayCopier.swift in Sources */,
 				112FF1532820E9BB0042C3C3 /* CountdownButton.swift in Sources */,
 				112FF13F28200F550042C3C3 /* DoneButton.swift in Sources */,
 				11B17886281ACD1200AD4C08 /* ContentView.swift in Sources */,

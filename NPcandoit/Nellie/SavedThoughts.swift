@@ -7,11 +7,10 @@
 
 import Foundation
 
-let savedThoughts = UserDefaults.standard.object(forKey: "myThought") as? [String]
-
 var thoughts: [String] = Unwrapper().unwrappedThoughts
 
 class Unwrapper {
+    let savedThoughts = UserDefaults.standard.object(forKey: "myThought") as? [String]
     var unwrappedThoughts: [String] = []
 
     init() {

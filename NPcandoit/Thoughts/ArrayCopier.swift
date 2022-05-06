@@ -18,3 +18,5 @@ struct ArrayCopier {
         return copiedArr
     }
 }
+
+// value type이라서 array를 카피할 때는 굳이 이렇게 만들어줄 필요 없음

@@ -57,11 +57,11 @@ struct Home: View {
                 }
                 
                 
-                Setting()
-                .tabItem{
-                    Image(systemName: "gear")
-                    Text("설정")
-                }
+//                Setting()
+//                .tabItem{
+//                    Image(systemName: "gear")
+//                    Text("설정")
+//                }
             }
         }
         .navigationBarHidden(true)

@@ -34,3 +34,5 @@ struct Home_Work_CardView: View {
         .padding(.trailing)
     }
 }
+
+// 이런건 중복되니까 중복줄이기

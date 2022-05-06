@@ -23,6 +23,7 @@ struct Remover {
             }
         }
         
+        
         UserDefaults.standard.removeObject(forKey: "myThought")
         UserDefaults.standard.set(newThoughts, forKey: "myThought")
         var thoughts: [String] = Unwrapper().unwrappedThoughts

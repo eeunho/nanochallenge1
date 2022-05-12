@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// 선택지가 두 개인 알러트뷰
+
 struct AlertButton2: View {
     @State var showDetail: Bool = false
     @State private var displayPopupMessage: Bool = false

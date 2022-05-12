@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// 선택지와 데스티네이션이 하나인 알러트 뷰
+
 struct AlertButton1: View {
     @State var showDetail: Bool = false
     @State private var displayPopupMessage: Bool = false

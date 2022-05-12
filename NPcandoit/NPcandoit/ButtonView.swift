@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// 기본 버튼으로 버튼 이름과 네비게이션 destination을 지정해줄 수 있다.
+
 struct ButtonView: View {
     let buttonLabel: String
     let destination: AnyView

@@ -7,6 +7,8 @@
 
 import Foundation
 
+// 저장해둔 생각을 삭제하는 코드
+
 struct Remover {
     func removeFromMemory(newArray: [String]) {
         var deletedThought: String

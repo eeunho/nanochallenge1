@@ -7,6 +7,8 @@
 
 import Foundation
 
+// 카드 안에 들어갈 컨텐츠 하드코딩
+
 let intro1 = """
 N인 당신! 생각이 너무 많아 일에 집중하기 힘든가요?
 

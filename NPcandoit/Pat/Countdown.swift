@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+// 5,4,3,2,1을 카운트해주는 코드. 카운트다운이 끝나면 다음페이지로 넘어간다.
+
 struct Countdown: View {
-    @State private var isShowingDetailView = false
+    @State private var showDetail = false
     @State var timeRemaining = 5
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -19,7 +21,7 @@ struct Countdown: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    NavigationLink(destination: GotoWork(), isActive: self.$isShowingDetailView) { EmptyView() }
+                    NavigationLink(destination: GotoWork(), isActive: self.$showDetail) { EmptyView() }
                     Button(action: { }) {
                         Text("\(timeRemaining)")
                             .font(.system(size: 200))
@@ -31,7 +33,7 @@ struct Countdown: View {
                                 }
                                 
                                 if timeRemaining == 0 {
-                                    self.isShowingDetailView = true
+                                    self.showDetail = true
                                 }
                             }
                     }

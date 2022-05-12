@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    func firstLaunch() -> Bool {
+    func firstLaunch() -> Bool { // 첫 번째 론칭인지 판단하는 함수
         if let launchedBefore = UserDefaults.standard.string(forKey: "visited") {
             return false
+            // 유저디폴트에서 이미 방문했었다면 false
         } else {
             let launchedBefore = UserDefaults.standard.set("yes", forKey: "visited");
             return true
+            // 유저디폴트에서 방문한 적이 없다면 true
         }
     }
     

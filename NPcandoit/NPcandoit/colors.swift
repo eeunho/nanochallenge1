@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+// 커스텀 색상 적용
+
 extension Color {
     static let backgroundgreen = Color("backgroundgreen")
     static let buttongreen = Color("buttongreen")

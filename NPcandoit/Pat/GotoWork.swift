@@ -20,10 +20,10 @@ struct GotoWork: View {
                 
                 Spacer()
                 
-                OkayButton(buttonLabel: "알겠어요 갈게요")
+                AlertButton1(destination: AnyView(Work()), title: "잘 생각했어요!", message: "일을 먼저 끝내고 쉬면 기분도 좋을 거예요.", dismissal: "맞아요", buttonLabel: "알겠어요 갈게요")
                     .padding()
-                
-                NoButton(buttonLabel: "싫으니 조용히 해요")
+                                
+                AlertButton2(destination: AnyView(Home()), title: "정말인가요?", message: "당신의 자유지만, 후회하는 것도 당신의 몫이에요", primary: "괜찮아요", buttonLabel: "싫으니 조용히 해요")
                     .padding(.bottom)
             }
         }

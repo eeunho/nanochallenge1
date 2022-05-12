@@ -1,13 +1,17 @@
 //
-//  Home_Thoughts_CardView.swift
+//  HomeCardView.swift
 //  NPcandoit
 //
-//  Created by Seulki Lee on 2022/05/02.
+//  Created by Seulki Lee on 2022/05/12.
 //
 
 import SwiftUI
 
-struct Home_Thoughts_CardView: View {
+struct HomeCardView: View {
+    let smallTitle: String
+    let largeTitle: String
+    let titleColor: Color
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -15,19 +19,20 @@ struct Home_Thoughts_CardView: View {
             
             HStack {
                 VStack(alignment: .leading) {
-                    Text("묻어두었던")
+                    Text(smallTitle)
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.lightgreen)
                     
-                    Text("기억상자를 열어보아요")
+                    Text(largeTitle)
                         .font(.title2)
                         .fontWeight(.bold)
-                        .foregroundColor(.lightpink)
+                        .foregroundColor(titleColor)
                 }
                 
                 Spacer()
             }
+            .layoutPriority(100)
             .padding()
         }
         .padding(.leading)

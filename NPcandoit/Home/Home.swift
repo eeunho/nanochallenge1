@@ -22,11 +22,11 @@ struct Home: View {
                     .padding(.leading)
                     
                     NavigationLink(destination: Nellie()) {
-                        Home_N_CardView()
+                        HomeCardView(smallTitle: "N인 당신의 생각정리를 도와줄", largeTitle: "요정 넬리를 만나보세요!", titleColor: .ngreen)
                     }
                     
                     NavigationLink(destination: Pat()) {
-                        Home_P_CardView()
+                        HomeCardView(smallTitle: "P인 당신의 계획 실행을 도와줄", largeTitle: "요정 팻을 만나보세요!", titleColor: .pyellow)
                     }
                     
                     HStack {
@@ -40,7 +40,7 @@ struct Home: View {
                     .padding(.leading)
                     
                     NavigationLink(destination: Work()) {
-                        Home_Work_CardView()
+                        HomeCardView(smallTitle: "지금 바로", largeTitle: "일하러 가볼까요?", titleColor: .lightpink)
                     }
                 }
                 .tabItem {

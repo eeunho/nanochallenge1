@@ -35,9 +35,9 @@ struct ContentView: View {
                     Spacer()
                     
                     if firstLaunch() == true {
-                        FirstStartButton(buttonLabel: "시작하기")
+                        ButtonView(buttonLabel: "시작하기", destination: AnyView(Intro()))
                     } else {
-                        VisitedStartButton(buttonLabel: "시작하기")
+                        ButtonView(buttonLabel: "시작하기", destination: AnyView(Home()))
                     }
                     
                 }

@@ -22,7 +22,7 @@ struct Intro: View {
                     }
                     .padding()
                     
-                    Intro_CardView1()
+                    CardView(texts: intro1)
                     .padding(.bottom, 100)
                     
                     Spacer()
@@ -31,7 +31,7 @@ struct Intro: View {
                 VStack {
                     Spacer()
                     
-                    Intro_CardView2()
+                    CardView(texts: intro2)
                     .padding(.bottom, 150)
                     
                     Spacer()
@@ -40,7 +40,7 @@ struct Intro: View {
                 VStack {
                     Spacer()
                     
-                    Intro_CardView3()
+                    CardView(texts: intro3)
                     .padding(.bottom, 150)
                     
                     Spacer()
@@ -49,13 +49,13 @@ struct Intro: View {
                 VStack {
                     Spacer()
                     
-                    Intro_CardView4()
+                    CardView(texts: intro4)
                     .padding(.bottom, 150)
                     
                     Spacer()
                     
                     NavigationLink(destination: Home()) {
-                        IntroButton(buttonLabel: "요정들을 만나러 가요")
+                        ButtonView(buttonLabel: "요정들을 만나러 가요", destination: AnyView(Home()))
                             .padding(80)                    }
                 }
             }

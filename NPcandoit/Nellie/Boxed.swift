@@ -18,7 +18,7 @@ struct Boxed: View {
                 
                 Spacer()
                 
-                BurialButton(buttonLabel: "생각을 묻어둬요")
+                ButtonView(buttonLabel: "생각을 묻어둬요", destination: AnyView(SaveOrDelete()))
                     .padding(.bottom)
             }
         }

@@ -24,7 +24,7 @@ struct Pat: View {
                     }
                     .padding()
                     
-                    Pat_CardView1()
+                    CardView(texts: pat1)
                         .padding(.bottom, 200)
                     
                     Spacer()
@@ -33,10 +33,10 @@ struct Pat: View {
                 VStack {
                     Spacer()
                     
-                    Pat_CardView2()
+                    CardView(texts: pat2)
                         .padding(.bottom)
                     
-                    CountdownButton(buttonLabel: "알겠어요")
+                    ButtonView(buttonLabel: "알겠어요", destination: AnyView(Countdown()))
                         .padding(80)
                 }
             }

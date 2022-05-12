@@ -24,7 +24,7 @@ struct Nellie: View {
                     }
                     .padding()
                     
-                    Nellie_CardView1()
+                    CardView(texts: nellie1)
                         .padding(.bottom, 200)
                     
                     Spacer()
@@ -33,10 +33,10 @@ struct Nellie: View {
                 VStack {
                     Spacer()
                     
-                    Nellie_CardView2()
+                    CardView(texts: nellie2)
                         .padding(.bottom)
                     
-                    BoxingButton(buttonLabel: "좋아요")
+                    ButtonView(buttonLabel: "좋아요", destination: AnyView(Boxed()))
                         .padding(80)
                 }
             }

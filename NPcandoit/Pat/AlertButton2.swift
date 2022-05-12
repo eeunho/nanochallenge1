@@ -1,20 +1,24 @@
 //
-//  NoButton.swift
+//  AlertButton2.swift
 //  NPcandoit
 //
-//  Created by Seulki Lee on 2022/05/03.
+//  Created by Seulki Lee on 2022/05/12.
 //
 
 import SwiftUI
 
-struct NoButton: View {
+struct AlertButton2: View {
     @State var showDetail: Bool = false
     @State private var displayPopupMessage: Bool = false
-    
+    let destination: AnyView
+    let title: String
+    let message: String
+    let primary: String
     let buttonLabel: String
+    
     var body: some View {
         VStack {
-            NavigationLink(destination: Home(), isActive: self.$showDetail) { EmptyView() }
+            NavigationLink(destination: destination, isActive: self.$showDetail) { EmptyView() }
             Button(action: {
                 self.displayPopupMessage = true
             })
@@ -26,7 +30,7 @@ struct NoButton: View {
                 .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)            }
         }
         .alert(isPresented: $displayPopupMessage) {
-            Alert(title: Text("정말인가요?"), message: Text("당신의 자유지만, 후회하는 것도 당신의 몫이에요"), primaryButton: .destructive(Text("괜찮아요"), action: {
+            Alert(title: Text(title), message: Text(message), primaryButton: .destructive(Text(primary), action: {
                 self.showDetail = true
             }), secondaryButton: .cancel())
         }

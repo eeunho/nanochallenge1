@@ -21,9 +21,9 @@ struct SaveOrDelete: View {
                 
                 Spacer()
                 
-                DeleteButton(buttonLabel: "아예 잊어버릴래요")
+                AlertButton1(destination: AnyView(Work()), title: "생각을 지웠어요", message: "더이상 생각하지 않도록 노력해요", dismissal: "그럴게요", buttonLabel: "아예 잊어버릴래요")
                 
-                SaveButton(buttonLabel: "나중에 꺼내볼 수도 있을 것 같아요")
+                ButtonView(buttonLabel: "나중에 꺼내볼 수도 있을 것 같아요", destination: AnyView(SaveThoughts()))
                     .padding(.bottom)
             }
         }

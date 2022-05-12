@@ -1,17 +1,19 @@
 //
-//  CountdownButton.swift
+//  ButtonView.swift
 //  NPcandoit
 //
-//  Created by Seulki Lee on 2022/05/03.
+//  Created by Seulki Lee on 2022/05/12.
 //
 
 import SwiftUI
 
-struct CountdownButton: View {
+struct ButtonView: View {
     let buttonLabel: String
+    let destination: AnyView
+    
     var body: some View {
         Button(action: { }) {
-            NavigationLink(destination: Countdown()) {
+            NavigationLink(destination: destination) {
                 Text(buttonLabel).padding()
                     .frame(width: 300)
                 
